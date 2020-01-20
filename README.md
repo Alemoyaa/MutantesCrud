@@ -1,4 +1,4 @@
-# Proyecto Mutantes
+# Proyecto Mutantes [![BCH compliance](https://bettercodehub.com/edge/badge/Alemoyaa/MutantesML?branch=master)](https://bettercodehub.com/)
 Este proyecto se base en una pagina web la cual mediante una cadena de ADN, detecta un hipotetico mutante 
 ## Tecnologias usadas:
 * Angular 
