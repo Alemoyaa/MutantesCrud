@@ -1,0 +1,41 @@
+<div class="container">
+    <br>
+    <button type="button" class="btn btn-info btn-block" (click)="agregar(0)">Agregar</button>
+    <br>
+    <div class="row">
+        <table class="table table-striped table-dark table-bordered mt-3">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Mutante</th>
+                <th scope="col">Cadenas</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let persona of personas">
+                <td>{{persona.id}}</td>
+                <td>{{persona.nombre}}</td>
+                <td>{{persona.apellido}}</td>
+                <td>{{persona.edad}}</td>
+                <td>{{persona.mutant}}</td>
+
+                <div class="btn btn-group btn-sm">
+                    <button aria-expanded="false" data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button">Lista de ADN<span class="caret"></span></button>
+
+                    <ul role="menu" class="dropdown-menu">
+                        <li class="list-group-item " *ngFor="let item of persona.adn; index as i">{{persona.adn[i].cadena}}</li>
+                    </ul>
+                </div>
+                <td>
+                    <button type="button" class="btn btn-danger btn-sm" (click)="delete(persona.id)">Eliminar</button>
+                    <button type="button" class="btn btn-warning btn-sm" (click)="update(persona.id)" >Editar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

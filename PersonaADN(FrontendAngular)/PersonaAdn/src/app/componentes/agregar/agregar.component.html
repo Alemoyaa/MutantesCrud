@@ -1,0 +1,33 @@
+<div class="col-8">
+  <br>
+  <div id="ventanaAgregar">
+    <div class="input-group mb-3 ">
+      <div class="input-group-prepend mt-2">
+        <span class="input-group-text" id="basic-addon1">Nombre</span>
+      </div>
+      <input type="text" class="form-control mt-2" placeholder="Ingrese su nombre" aria-label="nombre" aria-describedby="basic-addon1" [(ngModel)]="persona.nombre">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Apellido</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Ingrese su apellido" aria-label="apellido" aria-describedby="basic-addon1" [(ngModel)]="persona.apellido">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Edad</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Ingrese su edad" aria-label="edad" aria-describedby="basic-addon1" [(ngModel)]="persona.edad">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">ADN</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Ingrese las cadenas de adn separadas por una ' , '  (Coma) " aria-label="Cadena" aria-describedby="basic-addon1" [(ngModel)]="cadena">
+    </div>
+    <br>
+  </div>
+  <div class=" mt-1">
+      <button type="button" class="btn btn-outline-success btn-block" (click)="save(persona)" [routerLink]="['/']" routerLinkActive="active">Guardar</button> <!--save(persona)-->
+  </div>
+</div>
