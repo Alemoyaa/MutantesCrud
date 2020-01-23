@@ -6,7 +6,7 @@ Este proyecto se base en una pagina web la cual mediante una cadena de ADN, dete
 * Spring
 * XAMPP
 
-## Instalación
+## Lanzar proyecto
 * Importar modulos de node a el Frontend
 * Iniciar XAMMP con la base de datos
 * Importar e Iniciar el proyecto de spring
